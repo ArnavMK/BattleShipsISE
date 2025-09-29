@@ -7,11 +7,20 @@ public class Grid {
 
     public Grid() {
 
+
         for (int row = 0; row < 10; row++) {
             for (int col = 0; col < 10; col++) {
                 gridCoordinates[row][col] = new GridUnit(row, col);
             }
         }
+    }
+    
+    public void initialize() {
+
+    } 
+
+    public GridUnit[][] getGrid() {
+        return gridCoordinates; 
     }
 }
 
@@ -25,5 +34,9 @@ class GridUnit {
         this.x = x;
         this.y = y;
     }
-    
+
+    public int[] getCoordinates() {
+        int[] test = {x, y};
+        return test;
+    }    
 }
