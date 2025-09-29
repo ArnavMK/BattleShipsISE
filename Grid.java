@@ -1,12 +1,11 @@
-/**
- * Grid
- */
+
 public class Grid {
 
     private GridUnit[][] gridCoordinates = new GridUnit[10][10];
 
     public Grid() {
-
+        
+        initialize();
 
         for (int row = 0; row < 10; row++) {
             for (int col = 0; col < 10; col++) {
@@ -16,7 +15,7 @@ public class Grid {
     }
     
     public void initialize() {
-
+         
     } 
 
     public GridUnit[][] getGrid() {
